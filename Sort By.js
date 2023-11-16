@@ -34,7 +34,7 @@ const OptionComponent = () => {
             <View
               style={[
                 styles.radioButton,
-                selectedOption === option.id && {backgroundColor: 'black'},
+                selectedOption === option.id && {backgroundColor: '#2A2A2A'},
               ]}>
               {selectedOption === option.id && (
                 <View style={styles.radioButtonInner} />
@@ -54,24 +54,24 @@ const styles = StyleSheet.create({
     height: 'auto',
     width: '90%',
     borderWidth: 1,
-    borderRadius: 20,
+    borderRadius: 16,
   },
   optionContainer: {
     flexDirection: 'row',
     alignItems: 'center',
-    paddingVertical: 10,
+    // paddingVertical: 10,
     width: '100%',
     marginVertical: 20
   },
   icon: {
-    width: 28,
-    height: 28,
+    width: 24,
+    height: 24,
     marginRight: 12,
   },
   title: {
     flex: 1,
-    fontSize: 18,
-    color: 'black'
+    fontSize: 16,
+    color: '#2A2A2A'
   },
   radioButton: {
     width: 24,
@@ -82,8 +82,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   radioButtonInner: {
-    width: 9,
-    height: 9,
+    width: 10,
+    height: 10,
     borderRadius: 6,
     backgroundColor: '#ffffff',
   },
