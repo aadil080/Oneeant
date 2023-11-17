@@ -97,7 +97,7 @@ function Main() {
         data={DATA}
         numColumns={2}
         renderItem={renderItem}
-        keyExtractor={item => item.id.toString()}
+        keyExtractor={item => item.title}
       />
     </View>
   );
