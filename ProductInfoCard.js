@@ -35,6 +35,9 @@ function InfoOption({title, icon, desc}) {
           <Image source={icon} style={styles.icon} />
         </View>
         <Text style={styles.title}>{title}</Text>
+
+        {/* Image to show expand and collapse of element  */}
+
         <View style={styles.minusContainer}>
           {expanded ? (
             <Image
@@ -78,21 +81,16 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
   },
   optionContainer: {
-    // flexDirection: 'row',
-    // alignItems: 'center',
-    // marginHorizontal: '2.5%',
     width: '100%',
   },
   separator: {
     height: 1,
     width: '100%',
     backgroundColor: '#2A2A2A',
-    // marginLeft: '7%',
   },
   header: {
     flexDirection: 'row',
     alignItems: 'center',
-    // justifyContent: 'center',
     paddingVertical: 20,
   },
   title: {
@@ -118,10 +116,8 @@ const styles = StyleSheet.create({
   minusContainer: {
     height: 24,
     width: 24,
-    // marginRight: 12,
     position: 'absolute',
     right: 0,
-    // alignSelf: 'flex-end',
   },
 
   descContainer: {
